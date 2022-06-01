@@ -13,8 +13,18 @@
 
  /* Global styles
  ---------------------------------------- */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
     color: #424C55;
+    margin: 0;
+    padding: 0;
+    font: 14px/1.25 'Oxanium', cursive;;
 }
 img {
     width: 300px;
@@ -22,8 +32,24 @@ img {
 a {
     color: yellowgreen;
 }
-a:hover{
+a:hover {
     text-decoration: none;
+}
+h1{
+    font-size: 90px;
+    font-weight: 100;
+}
+h2 {
+    font-size: 45px;
+}
+h1, h2 {
+    font-family: 'Alfa Slab One', cursive;
+    margin: 0;
+    text-shadow: 5px 5px rgba(0, 0, 0, 25%);
+}
+.content-wrap {
+    width: 900px;
+    margin: 0 auto;
 }
  /* Profile
  ---------------------------------------- */
@@ -39,7 +65,6 @@ h1 {
  ---------------------------------------- */
 .projects {
     background: #F5EDF0;
-    height: 500px;
     padding: 3em 1em 0.5em;
 }
 .projects a {
@@ -50,9 +75,22 @@ h1 {
     background: yellowgreen;
     padding: 6px;
     border-radius: 4px ;
+    display: inline-block;
 }
 .projects .btn:hover {
     background: rgba(154, 205, 50, 80%);
+}
+.project-item {
+    overflow: hidden;
+    border-bottom: 1px dashed #3D2C2E;
+    padding: 25px 0;
+}
+.project-item img{
+    float: left;
+    margin-right: 20px;
+}
+.project-item h3 {
+    margin: 0;
 }
   /* Work Experience
  ---------------------------------------- */
